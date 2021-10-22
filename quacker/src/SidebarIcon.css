@@ -1,0 +1,12 @@
+.sidebarIcon {
+    display: flex;
+    align-items: center;
+}
+
+.sidebarIcon > .MuiSvgIcon-root {
+    padding: 15px;
+}
+
+.sidebarIcon:hover {
+    background-color: var(--quacker-color);    
+}
