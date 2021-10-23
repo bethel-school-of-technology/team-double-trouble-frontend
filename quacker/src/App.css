@@ -1,3 +1,8 @@
 body {
     --quacker-color: #FFA200;
 }
+
+.App {
+    display: flex;
+}
+
