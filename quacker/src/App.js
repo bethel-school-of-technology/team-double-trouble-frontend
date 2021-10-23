@@ -1,14 +1,16 @@
 import './App.css';
 import Sidebar from "./Sidebar.js";
+import Feed from './Feed.js';
 
 function App() {
   return (
     <div className="App">
-      <h5>Quacker is coming!</h5>
-      
+            
       {/* Sidebar */}
         <Sidebar />
+      
       {/* Feed */}   
+        <Feed />
 
     </div>
   );
