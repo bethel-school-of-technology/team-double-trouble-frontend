@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "./Sidebar.css";
+import "../styling/Sidebar.css";
 import HomeIcon from '@mui/icons-material/Home';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import PersonIcon from '@mui/icons-material/Person';

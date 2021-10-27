@@ -1,6 +1,8 @@
-import React from 'react'
-import QuackBox from './QuackBox.js'
-import "./Feed.css"
+import React from 'react';
+import QuackBox from './QuackBox.js';
+import "../styling/Feed.css";
+import "../styling/Post.css";
+import Post from './Post.js';
 
 function Feed() {
     return (
@@ -14,6 +16,8 @@ function Feed() {
             <QuackBox />
 
             {/*Post*/}
+            <Post />
+
             {/*Post*/}
             {/*Post*/}
             {/*Post*/}
