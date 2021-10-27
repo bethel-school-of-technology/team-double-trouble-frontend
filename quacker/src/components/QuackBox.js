@@ -1,5 +1,5 @@
 import React from 'react';
-import './QuackBox.css';
+import '../styling/QuackBox.css';
 import { Button, Avatar } from "@material-ui/core";
 
 function QuackBox() {
