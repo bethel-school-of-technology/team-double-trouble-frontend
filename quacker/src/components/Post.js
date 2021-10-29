@@ -1,4 +1,5 @@
 import React from 'react';
+import { Avatar } from "@material-ui/core";
 import "../styling/Post.css";
 
 function Post({
@@ -10,7 +11,7 @@ function Post({
     return (
         <div className="post">
             <div className="profilePic">
-                <img alt="profile pic"></img>
+                <Avatar></Avatar>    
             </div>
             <div className="postBody">
                 <div className="postHeader"></div>
