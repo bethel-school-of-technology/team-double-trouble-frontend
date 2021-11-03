@@ -1,0 +1,15 @@
+.postList {
+
+    border-bottom: 2px solid grey;
+    padding-bottom: 15px;
+}
+
+.profilePic {
+    margin: 15px 20px;
+}
+
+.quack {
+    display: block;
+    border-bottom: 2px solid grey;
+    padding-bottom: 15px;
+}

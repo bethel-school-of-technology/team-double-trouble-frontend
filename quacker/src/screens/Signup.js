@@ -1,9 +1,12 @@
-import '../styling/Signup.css';
+import "../styling/SignUp.css";
+import LoginForm from '../components/LoginForm';
+import WelcomePhoto from "../components/WelcomePhoto";
 
 function Signup() {
     return (
-        <div>
-           <h1>Signup Page</h1> 
+        <div className="Welcome">
+           <WelcomePhoto />
+           <LoginForm />
         </div>
     )
 }

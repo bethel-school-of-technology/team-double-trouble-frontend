@@ -1,10 +1,15 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
+import useFetch from './useFetch.js';
 import QuackBox from './QuackBox.js';
 import "../styling/Feed.css";
-import "../styling/Post.css";
-import Post from './Post.js';
+import "../styling/PostList.css";
+import PostList from './PostList.js';
 
 function Feed() {
+
+    const { error, isPending, data: quacks } = useFetch('http://localhost:8000/quacks') 
+
     return (
         <div className="feed">
             {/*Header*/}
@@ -16,20 +21,11 @@ function Feed() {
             <QuackBox />
 
             {/*Post*/}
-            <Post />
-
-            {/*Post*/}
-            {/*Post*/}
-            {/*Post*/}
-            {/*Post*/}
-            {/*Post*/}
-            {/*Post*/}
-            {/*Post*/}
-            {/*Post*/}
-            {/*Post*/} 
-               
+            { error && <div>{ error }</div> }
+            {quacks && <PostList quacks={quacks} />}               
         </div>
     )
 }
 
 export default Feed
+

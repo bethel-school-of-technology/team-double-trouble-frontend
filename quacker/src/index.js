@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Home from './screens/Home';
 import Profile from './screens/Profile';
-import Signup from './screens/Signup'
+import SignUp from './screens/SignUp'
 
 import './styling/index.css';
 
@@ -12,9 +12,10 @@ const App = () =>
 (
     <Router>
       <div>
-         <Route exact path="/" component={Home} />
+         <Route exact path="/" component={SignUp} />
+         <Route path="/home" component={Home} />
          <Route path="/profile" component={Profile} />
-         <Route path="/signup" component={Signup} />
+         <Route path="/signup" component={SignUp} />
       </div>
     </Router>
 );

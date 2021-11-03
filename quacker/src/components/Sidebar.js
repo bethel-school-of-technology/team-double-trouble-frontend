@@ -14,9 +14,9 @@ export class Sidebar extends Component {
 
                {/* SidebarIcons */}
                
-               <SidebarIcon Icon={HomeIcon} text="Home" />
-               <SidebarIcon Icon={TrendingUpIcon} text="Trends" />
-               <SidebarIcon Icon={PersonIcon} text="Profile" />
+               <a href="/home"><SidebarIcon Icon={HomeIcon} text="Home" /> </a>
+               <a href="/trends"><SidebarIcon Icon={TrendingUpIcon} text="Trends" /> </a>
+               <a href="/profile"><SidebarIcon Icon={PersonIcon} text="Profile" /> </a>
               
                {/* QuackBtn */}
                <Button variant="outlined">Quack!</Button>

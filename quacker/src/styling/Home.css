@@ -1,8 +1,8 @@
-body {
-    --quacker-color: #FFA200;
-}
-
 .Home {
     display: flex;
+}
+
+body {
+    --quacker-color: #FFA200;
 }
 
