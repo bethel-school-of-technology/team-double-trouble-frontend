@@ -9,7 +9,7 @@ import { Button } from "@material-ui/core";
 export class Sidebar extends Component {
     render() {
         return (
-            <div class="sidebar">
+            <div className="sidebar">
                {/* Logo */}
 
                {/* SidebarIcons */}
