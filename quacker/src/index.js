@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './screens/Home';
 import Profile from './screens/Profile';
 import SignUp from './screens/SignUp'
-
+import EditPost from './screens/EditPost'
 import './styling/index.css';
 
 const App = () =>
@@ -17,6 +17,7 @@ const App = () =>
         <Route path="/home" component={Home} />
         <Route path="/profile" component={Profile} />
         <Route path="/signup" component={SignUp} />
+        <Route path="/editPost" component={EditPost} />
       </Switch>
     </div>
   </Router>

@@ -8,7 +8,7 @@ import PostList from './PostList.js';
 
 function Feed() {
 
-    const { error, isPending, data: quacks } = useFetch('http://localhost:5000/api/post') 
+    const { error, data: quacks } = useFetch('http://localhost:5000/api/post') 
 
     return (
         <div className="feed">

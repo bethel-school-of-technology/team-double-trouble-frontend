@@ -7,12 +7,12 @@ const QuackBox = () => {
     const [username, setUsername] = useState('Dave');
     const [text, setText] = useState('');
     const [userId, setUserId] = useState('1');
-    const [date, setDate] = useState('11/7/21');   
+    //const [date, setDate] = useState('11/7/21');   
   
     const handleSubmit = (e) => {
         e.preventDefault();
                        
-        const quack = {username, text, userId, date};
+        const quack = {username, text, userId };
 
         fetch('http://localhost:5000/api/post/', {
             method: 'POST',
