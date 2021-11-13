@@ -2,7 +2,7 @@ import "../styling/SignUp.css";
 import LoginForm from '../components/LoginForm';
 import WelcomePhoto from "../components/WelcomePhoto";
 
-function Signup() {
+function SignUp() {
     return (
         <div className="Welcome">
            <WelcomePhoto />
@@ -11,4 +11,4 @@ function Signup() {
     )
 }
 
-export default Signup
+export default SignUp
