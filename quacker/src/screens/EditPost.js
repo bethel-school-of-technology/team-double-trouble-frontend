@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { useHistory, useParams, useLocation } from "react-router-dom";
 import "../styling/EditPost.css";
-
+import Sidebar from '../components/Sidebar';
 import TextField from '@mui/material/TextField';
 import { Button } from '@material-ui/core';
 
@@ -33,7 +33,9 @@ const EditPost = (props) => {
     }
 
     return (
+        
         <div className="container">
+        <Sidebar />
             <div className="form-container">
             <h1>Edit Post</h1>
                 <h3> {username} </h3>
