@@ -6,16 +6,19 @@ import Home from './screens/Home';
 import Profile from './screens/Profile';
 import SignUp from './screens/SignUp'
 import EditPost from './screens/EditPost'
+import PostList from './components/PostList';
+
 import './styling/index.css';
 
 const App = () =>
 (
+  
   <Router>
     <div className="App">
       <Switch>
         <Route exact path="/" component={SignUp} />
         <Route path="/home" component={Home} />
-        <Route path="/profile" component={Profile} />
+        <Route path="/profile/:id" component={Profile} />
         <Route path="/signup" component={SignUp} />
         <Route path="/editPost" component={EditPost} />
       </Switch>

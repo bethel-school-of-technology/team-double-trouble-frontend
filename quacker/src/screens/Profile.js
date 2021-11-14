@@ -1,13 +1,19 @@
 import '../styling/Profile.css';
-import Sidebar from '../components/Sidebar';
+import Sidebar from "../components/Sidebar.js";
+import UserProfileFeed from '../components/UserProfileFeed';
 
 function Profile() {
-    return (
-        <div>
-           <h1>Profile Page</h1> 
-           <Sidebar />
-        </div>
-    )
+  return (
+    <div className="Profile">
+            
+      {/* Sidebar */}
+        <Sidebar />
+      
+      {/* User Feed */}   
+        <UserProfileFeed />
+
+    </div>
+  );
 }
 
-export default Profile
+export default Profile;
