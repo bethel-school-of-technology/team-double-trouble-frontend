@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHistory, useParams } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "../styling/PostList.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
