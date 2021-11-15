@@ -1,3 +1,7 @@
 .Welcome {
     display: flex;
 }
+
+div.signin > p {
+    margin-top: 10px;
+}

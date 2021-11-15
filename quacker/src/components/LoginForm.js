@@ -1,7 +1,8 @@
 import "../styling/LoginForm.css";
 import React from 'react';
 import { useState } from 'react';
-import { Button } from "@material-ui/core";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from "react-bootstrap/Button";
 
 function SignInForm() {
     const [Username, setUsername] = useState('');
@@ -61,12 +62,11 @@ function SignInForm() {
                     value={Password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
-                <button>Submit</button>
+                <Button>Submit</Button>
                 {/* <a href="/home"><Button variant="outlined" className="loginButton">Login</Button></a> */}
             </form>
-            <p>New to Quacker?</p> <button onClick={onHandleRegister}>Sign up!</button>
-
-
+            <p>New to Quacker?</p> <Button onClick={onHandleRegister}>Sign up!</Button>
+            
         </div>
     )
 }

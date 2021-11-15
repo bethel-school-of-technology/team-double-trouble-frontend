@@ -6,7 +6,7 @@ import Home from './screens/Home';
 import Profile from './screens/Profile';
 import SignUp from './screens/SignUp'
 import EditPost from './screens/EditPost'
-import PostList from './components/PostList';
+
 
 import './styling/index.css';
 
