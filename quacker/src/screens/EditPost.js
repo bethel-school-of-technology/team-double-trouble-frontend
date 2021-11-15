@@ -1,12 +1,11 @@
-import React, {useState, useEffect} from 'react';
-import { useHistory, useParams, useLocation } from "react-router-dom";
+import React, { useState } from 'react';
+import { useHistory, useLocation } from "react-router-dom";
 import "../styling/EditPost.css";
-import Sidebar from '../components/Sidebar';
+
 import TextField from '@mui/material/TextField';
 import { Button } from '@material-ui/core';
 
-const EditPost = (props) => {
-    const param = useParams();
+const EditPost = () => {
     const location  = useLocation();
     const history = useHistory();
     const postItem = location.postItem;
@@ -16,7 +15,7 @@ const EditPost = (props) => {
 
 
     const handleSubmit = async () => {
-        // call Put api here
+        // fetch data from API
         const data = {
             username, 
             text: postText,
@@ -35,18 +34,15 @@ const EditPost = (props) => {
     return (
         
         <div className="container">
-        <Sidebar />
+        
             <div className="form-container">
             <h1>Edit Post</h1>
                 <h3> {username} </h3>
                     
-                <TextField
+                <textarea
                     required
-                    id="outlined-required"
-                    label="Post Description:"
-                    required
-                    className="form-item"
-                    style={{margin:20}}
+                    rows="5" 
+                    cols="60"                    
                     value={postText}
                     onChange={(e) => setPostText(e.target.value)}
                 />

@@ -1,26 +1,25 @@
 .quackBox {
-    padding-bottom: 10px;
-    border-bottom: 5px solid grey;
+    padding-bottom: 10px;    
     padding-right: 10 px;
 }
 
 .quackBox > form {
     display: flex;
+    background-color: grey;
 }
 
-.quackBox_input {
+div.quackBox_input {
     padding: 20px;
     display: flex;
+    width: 100%;
 }
 
 .quackBox_input > input {
     flex: 1;
     margin-left: 20px;
-    font-size: 18px;
-    border: none;
+    margin-right: 7px;
+    font-size: 18px;  
+    border: 2px solid black;
+    border-radius: 7px;  
 }
 
-.quackButton {
-    margin-left: auto !important;
-    margin-right: 20px !important;
-}

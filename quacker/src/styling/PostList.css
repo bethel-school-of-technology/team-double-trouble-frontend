@@ -12,4 +12,9 @@
     display: block;
     border-bottom: 2px solid grey;
     padding-bottom: 15px;
+    margin: 10px;
+}
+
+p.light {
+    color: grey;
 }

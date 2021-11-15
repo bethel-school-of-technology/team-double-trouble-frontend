@@ -2,3 +2,7 @@
     flex: 0.5;
     border-right: 1px solid grey;
 }
+
+div.feedheader {
+    text-align: center;
+}

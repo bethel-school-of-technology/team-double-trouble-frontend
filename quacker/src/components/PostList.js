@@ -1,9 +1,9 @@
 import React from 'react';
 import { useHistory, useParams } from "react-router-dom";
-import useFetch from './useFetch';
 import { Link } from "react-router-dom";
-// import { Avatar } from "@material-ui/core";
 import "../styling/PostList.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from "react-bootstrap/Button";
 
 function PostList ({ quacks }) {
         
@@ -26,18 +26,25 @@ function PostList ({ quacks }) {
     return (
         <div className="postList">
             {quacks.map(quack => (
+                
                 <div className="quack" key={quack.postId}>
-                <h2> <Link to={`profile/${quack.userId}`}>{quack.username}</Link></h2>
+                
+                <h2> <Link to={`profile/${quack.userId}`} style={{ textDecoration: 'none' }}>{quack.username}</Link></h2>
                 <p> { quack.text } </p>
-                <p> Posted on: { quack.date }</p>
-                <p> {quack.postId} </p>
-                <button onClick={()=>{onEditPost({
+                <p className="light"> Posted on: { quack.date }</p>
+                <div className="edit">
+                <Button className ="btn btn-secondary" onClick={()=>{onEditPost({
                     username: quack.username, 
                     text: quack.text,
                     postId: quack.postId,
-                })}}>Edit</button>  
-                <button onClick={() => onDeleteClick(quack.postId)}>Delete</button>              
+                })}}>Edit</Button> 
+                </div> 
+                <div class="pull-right">
+                <Button className="btn btn-warning" onClick={() => onDeleteClick(quack.postId)}>Delete</Button>
+                </div>             
+                
                 </div>
+                
             ))}               
         </div>
     )

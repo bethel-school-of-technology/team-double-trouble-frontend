@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
 import useFetch from './useFetch.js';
 import QuackBox from './QuackBox.js';
 import "../styling/Feed.css";

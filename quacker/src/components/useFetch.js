@@ -1,5 +1,3 @@
-import { Details } from '@mui/icons-material';
-import { dividerClasses } from '@mui/material';
 import { useState, useEffect } from 'react';
 
 const useFetch = (url) => {
@@ -12,7 +10,7 @@ const useFetch = (url) => {
       
     fetch(url, {signal: abortCont.signal })
       .then(res => {
-        if (!res.ok) { // error coming back from server
+        if (!res.ok) { // checks for error coming back from server
           throw Error('could not fetch the data for that resource');
         } 
         return res.json();

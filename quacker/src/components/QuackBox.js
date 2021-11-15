@@ -1,14 +1,14 @@
 import React from 'react';
 import { useState, setState } from 'react';
 import '../styling/QuackBox.css';
-import { Button, Avatar } from "@material-ui/core";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from "react-bootstrap/Button";
 
 const QuackBox = () => {
-    const [username, setUsername] = useState('Dave');
+    const [username, setUsername] = useState('User3');
     const [text, setText] = useState('');
-    const [userId, setUserId] = useState('1');
-    //const [date, setDate] = useState('11/7/21');   
-  
+    const [userId, setUserId] = useState('3');
+      
     const handleSubmit = (e) => {
                                
         const quack = {username, text, userId };
@@ -27,14 +27,14 @@ const QuackBox = () => {
         <div className="quackBox">
             <form>
                 <div className="quackBox_input">
-                    <Avatar></Avatar>
                     <input onSubmit={handleSubmit}
+                    className="quackInput"
                     type="text"
                     value={text}
                     onChange={(e) => setText(e.target.value)}
                     placeholder="What's quackin?">                                        
                     </input>
-                    <button onClick={handleSubmit}>Quack!</button>                    
+                    <Button onClick={handleSubmit}>Quack!</Button>                    
                 </div>
             </form>
         </div>
