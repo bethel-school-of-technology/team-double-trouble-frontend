@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useHistory, useLocation } from "react-router-dom";
 import "../styling/EditPost.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from "react-bootstrap/Button";
 
-import TextField from '@mui/material/TextField';
-import { Button } from '@material-ui/core';
 
 const EditPost = () => {
     const location  = useLocation();
@@ -46,8 +46,8 @@ const EditPost = () => {
                     value={postText}
                     onChange={(e) => setPostText(e.target.value)}
                 />
-                <Button variant='contained' color="primary" style={{margin:10}} onClick={handleSubmit}>Submit Change</Button> 
-                <Button variant='contained' color="primary" style={{margin:10}} onClick={() => history.push('/home')}>Cancel</Button>   
+                <Button onClick={handleSubmit}>Submit Change</Button> 
+                <Button className="btn btn-warning" onClick={() => history.push('/home')}>Cancel</Button>   
                 </div>
         </div>
     )
